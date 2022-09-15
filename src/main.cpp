@@ -2,10 +2,13 @@
 
 #include <SDL.h>
 #include <iostream>
+#include <headers/screen.h>
+
 
 int main(int argc, char* argv[]){
-    std::cout << "SDL works" << std::endl;
-    std::cin.get();
+    Screen screen;
+
+    screen.run();
     
     return 0;
 }
