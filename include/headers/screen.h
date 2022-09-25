@@ -21,11 +21,16 @@ class Screen{
 
         SDL_Window* _window;
         SDL_Renderer* _renderer;
+        SDL_Color _bgc;
+
 
         int _screenWidth;
         int _screenHeight;
 
         ScreenState _screenState;
+
+        Uint32* _pixels;
+        SDL_Texture* _texture;
 };
 
 
