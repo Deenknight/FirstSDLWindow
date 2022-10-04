@@ -24,7 +24,7 @@ void Bar::setWidth(int width){
 void Bar::setState(BarState state){
     switch(state){
         case BarState::NOTSORTED:
-            _color = {.r = 255, .g = 255, .b = 255};
+            _color = {.r = 0, .g = 0, .b = 0};
             break;
         case BarState::MOVING:
             _color = {.r = 255, .g = 0, .b = 0};

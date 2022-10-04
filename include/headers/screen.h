@@ -3,6 +3,7 @@
 
 #include <sdl2/SDL.h>
 #include <sdl2/SDL_image.h>
+#include<sdl2/SDL_ttf.h>
 
 enum class ScreenState {PLAY, EXIT};
 
@@ -23,7 +24,6 @@ class Screen{
         SDL_Renderer* _renderer;
         SDL_Color _bgc;
 
-
         int _screenWidth;
         int _screenHeight;
 
@@ -31,6 +31,10 @@ class Screen{
 
         Uint32* _pixels;
         SDL_Texture* _texture;
+
+        TTF_Font* _TNR;
+        SDL_Surface* _textSurface;
+
 };
 
 
